@@ -38,14 +38,14 @@ def get_data(filename):
 
 
 with header:
-    st.title('My Front-End (with Streamlit) project') 
+    st.title('My Front-End data driven(with Streamlit) project') 
     
 with dataset:
     st.header('Movie dataset')
     st.markdown('You can get the data  from : `https://www.kaggle.com/rounakbanik/the-movies-dataset`.')
     st.markdown('`https://github.com/KerimM-bit/Streamlit-front-end` <-You can use my github  to access python code as well as the data.' )
     
-    data = get_data("E:\Data analyst\Streamlit-data_viz\data\movie_metadata.csv")
+    data = get_data("data/movie_metadata.csv")
     st.write(data)
     st.write('DataFrame dimensions:', data.shape)
   
